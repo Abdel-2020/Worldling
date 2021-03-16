@@ -1,0 +1,203 @@
+@media(min-width:768px) {
+  h1, h2, h3 {
+    font-family: 'Raleway';
+  }
+
+  h1, h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  p, em, .navbar-text {
+    font-family: 'Tajawal';
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #TopNav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .navbar-title {
+    text-decoration: none;
+    color: black;
+    margin: 0 0 10px 0;
+    padding: 10px 0 15px 10px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .navbar-text {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0 5px;
+  }
+
+  #main-quote {
+    opacity: 1;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    z-index: 3;
+    background-color: rgba(238, 238, 238, 80%);
+    padding: 20px 25px;
+    font-weight: 200;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition:opacity 300ms ease-in-out;
+    -ms-transition:opacity 300ms ease-in-out;
+    -o-transition:opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+  }
+
+  #main-quote.fade {
+  opacity: 0;
+}
+
+  #player {
+    margin-top: 0;
+    position: absolute;
+  }
+
+  .my-story-container {
+    margin-top: 55%;
+    width:90%;
+    margin: 55% 5% 0 5%;
+    position: relative;
+    display: flex;
+  }
+
+  .my-story {
+    margin-left: 200px;
+
+
+  }
+
+  .story-text {
+    padding: 15px;
+    text-align: justify;
+    font-size: 1.75rem;
+    font-weight: 300;
+
+  }
+
+  .dumbbell-img {
+
+  }
+
+  .img-caption-text {
+    text-align: center;
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+/*                             howtochangeyourself.html                      */
+/*---------------------------------------------------------------------------*/
+@media(min-width:768px) {
+  .main-content-header {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+
+  .background {
+    background-color: #f1f1f1;
+  }
+
+  .main-content-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .main-content {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f8f9fa;
+  }
+
+  .rule{
+    margin: 20px 33% 30px 33%;
+    width: 33%;
+    border: none;
+    border-top: 1px solid  #6d7e3c;
+
+  }
+
+  .main-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 50px 50px 50px;
+    line-height: 2.5rem;
+  }
+
+  .main-content-subheading {
+    font-size: 2rem;
+    color: #6d7e3c;
+    font-weight: 400;
+  }
+
+  .main-content-box {
+    padding: 0 70px;
+    text-align: justify;
+  }
+
+  .main-content-box-2 {
+    line-height: 2.5rem;
+  }
+
+  .pillar-container {
+    padding: 5px 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pillar-box {
+    flex-basis: 15%;
+  }
+
+  .pillar-img {
+    padding: 0 33%;
+  }
+
+  .pillar-box-link {
+    text-decoration: none;
+    color: #6d7e3c;
+  }
+
+  .pillar-box-link:hover {
+    color: #6d7e3c;
+    text-decoration: none;
+  }
+
+  .pillar-text {
+    font-size: 2rem;
+    padding: 0 5px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+}
+
+/*---------------------------------------------------------------------------*/
+/*                             habitreform.html                              */
+/*---------------------------------------------------------------------------*/
+@media(min-width:768px) {
+.habit-list{
+  list-style: none;
+  text-align: left;
+  margin-left: 30px;
+}
+
+}

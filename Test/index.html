@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--CSS stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <title>Worldling</title>
+</head>
+
+<body>
+
+  <!-- Top Nav -->
+  <div id="TopNav">
+    <h1 class="navbar-title"><a class="navbar-title" href="WorldlingV2/index.html">Worldling</a></h1>
+    <nav class="navbar">
+      <a class="navbar-text" href="WorldlingV2/how-to-change-yourself.html">How to change yourself</a>
+      <a class="navbar-text" href="/css/">Resources</a>
+      <a class="navbar-text" href="/js/">Contact me</a>
+    </nav>
+  </div>
+  <!--End of Top Nav -->
+
+  <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+  <div id="Content-Video">
+    <h2 id="main-quote"><em class="main-quote-text">“It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit.”</em> - Socrates.</h2>
+  </div>
+
+
+  <div id="player"></div>
+
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '100%',
+        width: '100%',
+        videoId: 'S439e52OQSg',
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+
+
+//  function onPlayerStateChange(event) {
+  /*  if (event.data == 1) {
+      let fade = document.getElementById("main-quote");
+        fade.classList.toggle('fade');
+    } else if (event.data == 2) {
+      fade.classList.toggle('fade');
+    }
+}*/
+
+
+
+      function onPlayerStateChange(event) {
+        var done = false;
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            let fade = document.getElementById("main-quote");
+            fade.classList.toggle('fade');
+        } else if (event.data == YT.PlayerState.PAUSED && !done){
+          fade.classList.toggle('fade');
+          done = true;
+        }
+
+      }
+
+
+
+
+
+    /*function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        mainQuote = document.getElementById("main-quote");
+        mainQuote.style.right = '10000px';
+      }
+    }*/
+
+
+
+
+
+
+    function stopVideo() {
+      player.stopVideo();
+    }
+  </script>
+
+
+
+
+
+
+  <!-- Content/Video
+  <div id="Content-Video">
+    <h2 id="main-quote"><em class="main-quote-text">“It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit.”</em> - Socrates.</h2>
+  </div>
+  <iframe id="player" width="100%" height="100%" src="https://www.youtube.com/embed/S439e52OQSg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <!--End of Content/Video -->
+
+  <div id="My-Story">
+
+    <div class="my-story-container">
+
+      <div class="my-story-dumbbell">
+        <img class="dumbbell-img" src="images/dumbbell.png" />
+        <p class="img-caption-text">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+      </div>
+      <div class="my-story">
+        <h3 class="my-story-title">My Story</h3>
+        <p class="story-text">From 115kg to 70kg, 254lbs to 154lbs, I would like to use this place as a journal to document the last stage in my journey.</p>
+        <p class="story-text"> I hope this space can help motivate and inspire those who are overweight to take the plunge that will change their lives the same way it did mine! I'll be going over topics such as my mental & social states and how they
+          changed throughout my progression. I hope my story can reach those looking to gain insight on the trials and tribulations they will most likely encounter should they choose to go on this path.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
