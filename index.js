@@ -1,26 +1,24 @@
+//Carousel buttons
+var slideIndex = 1;
+showSlides(slideIndex);
 
-
-//Slide Main Quote off the screen when youtube video is clicked
-
-
-
-
-
-
-
-var isPlaying = document.getElementsByTagName("iframe"); /*, moveMainQuote());*/
-
-if isPlaying.onStateChange(1) == "true" {
-  console.log("is playing")
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-/*if isPlaying == true {
-  mainQuote();
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function moveMainQuote (){
-  var mainQuote = document.getElementById("main-quote");
-  mainQuote.style.right = '10000px';
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("my-slides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }
-*/
