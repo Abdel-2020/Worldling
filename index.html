@@ -87,11 +87,11 @@
         var done = false;
         if (event.data == YT.PlayerState.PAUSED && !done){
           let fade = document.getElementById("main-quote");
-          fade.classList.toggle('fade-quote');
+          fade.classList.toggle('fade');
           done = true;
         } else if (event.data == YT.PlayerState.PLAYING && !done) {
             let fade = document.getElementById("main-quote");
-            fade.classList.toggle('fade-quote');
+            fade.classList.toggle('fade');
             done = true;
       }
     }
