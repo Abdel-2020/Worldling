@@ -247,9 +247,9 @@
 
 /* Fading animation */
 .fade-text {
-  -webkit-animation-name: fade;
+  -webkit-animation-name: fade-text;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
+  animation-name: fade-text;
   animation-duration: 1.5s;
 }
 
