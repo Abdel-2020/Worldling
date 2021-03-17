@@ -245,20 +245,20 @@
 /* Number text (1/3 etc) */
 
 
-/* Fading animation
-.fade {
+/* Fading animation */
+.fade-text {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade-text {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fade-text {
   from {opacity: .4}
   to {opacity: 1}
 }
