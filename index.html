@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <!-- Top Nav -->
   <div id="TopNav">
     <h1 class="navbar-title"><a class="navbar-title"href="index.html">Worldling</a></h1>
@@ -22,10 +23,13 @@
     </nav>
   </div>
 
+
+
+  <h2 id="main-quote"><em class="main-quote-text">“It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit.”</em> - Socrates.</h2>
   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-  <div id="Content-Video">
-    <h2 id="main-quote"><em class="main-quote-text">“It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit.”</em> - Socrates.</h2>
-  </div>
+
+
+<main class="container">
 
 
   <div id="player"></div>
@@ -44,8 +48,6 @@
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        height: '100%',
-        width: '100%',
         videoId: '2bguEiUgDA4',
         events: {
           'onReady': onPlayerReady,
@@ -121,31 +123,23 @@
   <iframe id="player" width="100%" height="100%" src="https://www.youtube.com/embed/S439e52OQSg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 End of Content/Video -->
 
+<div class="container-main">
+  <div class="my-story-dumbbell">
+       <img class="dumbbell-img" src="images/dumbbell.png" />
+       <p class="img-caption-text">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+     </div>
+     <div class="my-story">
+       <h3 class="my-story-title">My Story</h3>
+       <p class="story-text">From 115kg to 70kg, 254lbs to 154lbs, I would like to use this place as a journal to document the last stage in my journey. <br><br>
+        I hope this space can help motivate and inspire those who are overweight to take the plunge that will change their lives the same way it did mine! I'll be going over topics such as my mental & social states and how they
+         changed throughout my progression. I hope my story can reach those looking to gain insight on the trials and tribulations they will most likely encounter should they choose to go on this path.
+      </p>
+     </div>
+   </div>
+ </div>
+</div>
 
-
-
-  <div id="My-Story">
-
-
-
-    <div class="my-story-container">
-
-
-
-      <div class="my-story-dumbbell">
-        <img class="dumbbell-img" src="images/dumbbell.png" />
-        <p class="img-caption-text">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-      </div>
-      <div class="my-story">
-        <h3 class="my-story-title">My Story</h3>
-        <p class="story-text">From 115kg to 70kg, 254lbs to 154lbs, I would like to use this place as a journal to document the last stage in my journey.</p>
-        <p class="story-text"> I hope this space can help motivate and inspire those who are overweight to take the plunge that will change their lives the same way it did mine! I'll be going over topics such as my mental & social states and how they
-          changed throughout my progression. I hope my story can reach those looking to gain insight on the trials and tribulations they will most likely encounter should they choose to go on this path.
-        </p>
-      </div>
-    </div>
-  </div>
-
+</main>
 
 <script src ="index.js"></script>
 </body>
